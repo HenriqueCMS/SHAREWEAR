@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style/header_footer_assets.css">
+    <link rel="stylesheet" href="/style/styles_geral.css">
+    <link rel="stylesheet" href="/style/colection_assets.css">
+    <link rel="stylesheet" href="/style/detalhes.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="navigation-list flex">
+                <li><a href="/"><h1 class="logo">ShareWear</h1></a></li>
+                <li><a href="/produtos">Masculino</a></li>
+                <li><a href="/produtos">Feminino</a></li>
+                <li><a href="/produtos">Infantil</a></li>
+                <li class="dropdown">
+                    <a href="#colecoes">Coleção</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/produtos">Casual</a></li>
+                        <li><a href="/produtos">Social</a></li>
+                        <li><a href="/produtos">Grife</a></li>
+                        <li><a href="/produtos">Inverno</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">Sobre nós</a></li>
+                <li><div class="anunciar"><a href="/form"><button>Anunciar</button></a></div></li>
+                <li class="search">
+                    <nav class="search-nav">
+                        <form class="search-form">
+                            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquise um produto">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </nav>
+                </li>
+                <li class="dropdown">
+                    <button class="search-button"><i class="fas fa-user"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="detalhes_produto">
+            <ul class="detalhes_produto_list">
+                <li>
+                    <img src="<%= product.url %>" alt="Imagem do Produto" class="imagem_produto">
+                </li>
+                <li>
+                    <div class="info_produto">
+                        <h2 class="nome_produto"><%= product.name %></h2>
+                        <p class="descricao_produto">
+                            <%= product.descricao%>                
+                        </p>
+                        <p class="preco_produto">R$ <%= product.valor.toFixed(2) %></p>
+                        <div class="tamanho_produto">
+                            <label for="size" class="tamanho_titulo">Escolha o Tamanho:</label>
+                            <div class="size-options">
+                                <div class="size-option">
+                                    <input type="radio" id="size-pp" name="size">
+                                    <label for="size-pp">PP</label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-p" name="size">
+                                    <label for="size-p">P</label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-m" name="size">
+                                    <label for="size-m">M</label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-g" name="size">
+                                    <label for="size-g">G</label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-gg" name="size">
+                                    <label for="size-gg">GG</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add_ao_carrinho">Adicionar ao Carrinho</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="informacoes_adicionais flex-row">
+            <div class="frete-info">
+                <h3>Frete Grátis</h3>
+                <p>Frete grátis em pedidos acima de R$69,00</p>
+                <p>Estimado para entrega em 11/06/2024 - 20/06/2024</p>
+            </div>
+            <div class="devolucoes-info">
+                <h3>Devoluções Gratuitas</h3>
+                <p>Saiba mais</p>
+            </div>
+            <div class="seguranca-info">
+                <h3>Segurança de Compras</h3>
+                <p>Pagamentos seguros</p>
+                <p>Segurança de logística</p>
+                <p>Atendimento</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="contato">
+        <div class="footer-content">
+            <h2>Alugue Moda</h2>
+            <p>Encontre o traje perfeito para qualquer ocasião em nosso guarda-roupa virtual.</p>
+        </div>
+        <div class="footer-info">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: contato@sharewear.com</li>
+                <li>Telefone: (00) 1234-5678</li>
+                <li>Endereço: Av. Principal, 123, Fortaleza, Brasil</li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

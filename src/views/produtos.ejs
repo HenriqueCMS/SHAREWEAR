@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style/header_footer_assets.css">
+    <link rel="stylesheet" href="/style/styles_geral.css">
+    <link rel="stylesheet" href="/style/colection_assets.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="navigation-list flex">
+                <li><a href="/"><h1 class="logo">ShareWear</h1></a></li>
+                <li><a href="/produtos">Masculino</a></li>
+                <li><a href="/produtos">Feminino</a></li>
+                <li><a href="/produtos">Infantil</a></li>
+                <li class="dropdown">
+                    <a href="#colecoes">Coleção</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/produtos">Casual</a></li>
+                        <li><a href="/produtos">Social</a></li>
+                        <li><a href="/produtos">Grife</a></li>
+                        <li><a href="/produtos">Inverno</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">Sobre nós</a></li>
+                <li><div class="anunciar"><a href="/form"><button>Anunciar</button></a></div></li>
+                <li class="search">
+                    <nav class="search-nav">
+                        <form class="search-form">
+                            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquise um produto">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </nav>
+                </li>
+                <li class="dropdown">
+                    <button class="search-button"><i class="fas fa-user"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <div class="colection-main">
+            <div class="filter">
+                <ul class="filter-list flex-column">
+                    <li>
+                        <h2>
+                            Filtros
+                        </h2>
+                    </li>
+                    <li>
+                        <div class="categoria-filter">
+                            <div class="categoria-title text-titulo">
+                                <span>Categoria</span>
+                            </div>
+
+                            <div class="categoria-f">
+                                <div class="categoria-f">
+                                    <input id="female" type="checkbox" name="categoria">
+                                    <label for="female">Feminino</label>
+                                </div>
+
+                                <div class="categoria-m">
+                                    <input id="male" type="checkbox" name="categoria">
+                                    <label for="male">Masculino</label>
+                                </div>
+
+                                <div class="categoria-i">
+                                    <input id="infantil" type="checkbox" name="categoria">
+                                    <label for="infantil">Infantil</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="colecao-filter">
+                            <div class="categoria-title text-titulo">
+                                <span>Coleção</span>
+                            </div>
+
+                            <div class="colecao-f">
+                                <div class="colecao-c">
+                                    <input id="casual" type="checkbox" name="colecao">
+                                    <label for="casual">Casual</label>
+                                </div>
+
+                                <div class="colecao-s">
+                                    <input id="social" type="checkbox" name="colecao">
+                                    <label for="social">Social</label>
+                                </div>
+
+                                <div class="colecao-g">
+                                    <input id="grife" type="checkbox" name="colecao">
+                                    <label for="grife">Grife</label>
+                                </div>
+
+                                <div class="colecao-inv">
+                                    <input id="inverno" type="checkbox" name="colecao">
+                                    <label for="inverno">Inverno</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tamanho-filter">
+                            <div class="tamanho-title text-titulo">
+                                <span>Tamanho</span>
+                            </div>
+
+                            <div class="tamanho-f">
+                                <div class="tamanho-GG">
+                                    <input id="GG" type="checkbox" name="tamanho">
+                                    <label for="GG">GG</label>
+                                </div>
+
+                                <div class="tamanho-G">
+                                    <input id="G" type="checkbox" name="tamanho">
+                                    <label for="G">G</label>
+                                </div>
+
+                                <div class="tamanho-M">
+                                    <input id="M" type="checkbox" name="tamanho">
+                                    <label for="M">M</label>
+                                </div>
+
+                                <div class="tamanho-P">
+                                    <input id="P" type="checkbox" name="tamanho">
+                                    <label for="P">P</label>
+                                </div>
+
+                                <div class="tamanho-PP">
+                                    <input id="PP" type="checkbox" name="tamanho">
+                                    <label for="PP">PP</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="valor-filter">
+                            <div class="valor-title text-titulo">
+                                <span>Valor</span>
+                            </div>
+
+                            <div class="valor-f">
+                                <div class="valor-1">
+                                    <input id="1" type="checkbox" name="valor">
+                                    <label for="1">Menos de 50 R$</label>
+                                </div>
+
+                                <div class="valor-2">
+                                    <input id="2" type="checkbox" name="valor">
+                                    <label for="2">Entre 50-100 R$</label>
+                                </div>
+
+                                <div class="valor-3">
+                                    <input id="3" type="checkbox" name="valor">
+                                    <label for="3">Mais de 100 R$</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="colection-button">
+                            <button>FILTRAR &#187;</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="product-section">
+                    <h2 class="section-title">Produtos</h2>
+                    <div class="product-list">
+                        <% products.forEach(product => { %>
+                            <div class="product-card">
+                                <img src="<%= product.url %>" alt="<%= product.name %>" class="product-image">
+                                <h2 class="product-name"><%= product.produto %></h2>
+                                <p class="product-description"><%= product.descricao%></p>
+                                <p class="product-price">R$ <%= product.valor.toFixed(2) %></p>
+                                <a href="/product/<%= product._id %>" class="product-link">Saiba mais</a>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer id="contato">
+        <div class="footer-content">
+            <h2>Alugue Moda</h2>
+            <p>Encontre o traje perfeito para qualquer ocasião em nosso guarda-roupa virtual.</p>
+        </div>
+        <div class="footer-info">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: contato@sharewear.com</li>
+                <li>Telefone: (00) 1234-5678</li>
+                <li>Endereço: Av. Principal, 123, Fortaleza, Brasil</li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

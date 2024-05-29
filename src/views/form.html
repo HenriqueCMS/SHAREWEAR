@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/header_footer_assets.css">
+    <link rel="stylesheet" href="/style/style_form.css">
+    <link rel="stylesheet" href="/style/styles_geral.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="navigation-list flex">
+                <li><a href="/"><h1 class="logo">ShareWear</h1></a></li>
+                <li><a href="/produtos">Masculino</a></li>
+                <li><a href="/produtos">Feminino</a></li>
+                <li><a href="/produtosl">Infantil</a></li>
+                <li class="dropdown">
+                    <a href="#colecoes">Coleção</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/produtos">Casual</a></li>
+                        <li><a href="/produtos">Social</a></li>
+                        <li><a href="/produtos">Grife</a></li>
+                        <li><a href="/produtos">Inverno</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">Sobre nós</a></li>
+                <li><div class="anunciar"><a href="/form"><button>Anunciar</button></a></div></li>
+                <li class="search">
+                    <nav class="search-nav">
+                        <form class="search-form">
+                            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquise um produto">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </nav>
+                </li>
+                <li class="dropdown">
+                    <button class="search-button"><i class="fas fa-user"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="container">
+        <div class="form-image">
+            <img src="img/undraw_window_shopping_re_0kbm.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="/register/save" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre o produto</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="name">Nome do produto</label>
+                        <input id="name" type="text" name="name" placeholder="Nome do produto" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="valor">Valor do aluguel (R$ por dia)</label>
+                        <input id="valor" type="number" name="valor" placeholder="Valor do aluguel" required min="0">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="descricao">Descrição do produto</label>
+                        <input id="descricao" type="text" name="descricao" placeholder="Descreva o produto" required>
+                    </div>
+
+                </div>
+
+                <div class="tamanho-inputs">
+                    <div class="tamanho-title">
+                        <h6>Tamanho do produto</h6>
+                    </div>
+
+                    <div class="tamanho-group">
+                        <div class="tamanho-input">
+                            <input id="GG" type="radio" value="GG" name="tamanho">
+                            <label for="GG">GG</label>
+                        </div>
+
+                        <div class="tamanho-input">
+                            <input id="G" type="radio" value="G" name="tamanho">
+                            <label for="G">G</label>
+                        </div>
+
+                        <div class="tamanho-input">
+                            <input id="M" type="radio" value="M" name="tamanho">
+                            <label for="M">M</label>
+                        </div>
+
+                        <div class="tamanho-input">
+                            <input id="P" type="radio" value="P" name="tamanho">
+                            <label for="P">P</label>
+                        </div>
+
+                        <div class="tamanho-input">
+                            <input id="PP" type="radio" value="PP" name="tamanho">
+                            <label for="PP">PP</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria-inputs">
+                    <div class="categoria-title">
+                        <h6>Categoria do produto</h6>
+                    </div>
+
+                    <div class="categoria-group">
+                        <div class="categoria-input">
+                            <input id="female" type="radio" value="Feminino" name="categoria">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="categoria-input">
+                            <input id="male" type="radio" value="Masculino" name="categoria">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="categoria-input">
+                            <input id="infantil" type="radio" value="Infantil" name="categoria">
+                            <label for="infantil">Infantil</label>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="colecao-inputs">
+                    <div class="colecao-title">
+                        <h6>Coleção do produto</h6>
+                    </div>
+
+                    <div class="colecao-group">
+                        <div class="colecao-input">
+                            <input id="casual" type="radio" value="Casual" name="colecao">
+                            <label for="casual">Casual</label>
+                        </div>
+
+                        <div class="colecao-input">
+                            <input id="inverno" type="radio" value="Inverno" name="colecao">
+                            <label for="inverno">Inverno</label>
+                        </div>
+
+                        <div class="colecao-input">
+                            <input id="social" type="radio" value="Social" name="colecao">
+                            <label for="social">Social</label>
+                        </div>
+
+                        <div class="colecao-input">
+                            <input id="grife" type="radio" value="Grife" name="colecao">
+                            <label for="grife">Grife</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="url-inputs">
+                    <div class="url-group">
+                        <div class="url-input">
+                            <label for="url">Url da imagem</label>
+                            <input id="url" type="url" name="url" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclude-button">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

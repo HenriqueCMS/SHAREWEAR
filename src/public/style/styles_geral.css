@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'formular';
+    src: url('') format('woff2'),
+         url('../fonts/sua-fonte.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #0A1128;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+main {
+    margin-top: 5rem; 
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button-geral button{
+    background-color: #c7c7c7;
+    border: none;
+    cursor: pointer;
+    padding: 0.9rem 3.8rem;
+    color: #0A1128;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgb(94, 94, 94);
+}
+
+.button-geral button:hover{
+    background-color: #0A1128;
+    color: #fff;
+    transition: 0.5s all;
+    box-shadow: 0 .5rem 1rem rgb(2, 17, 61);
+}
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text-titulo{
+    font-weight:bolder !important;
+}
+
+/*CARD*/
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0.7rem;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin-bottom: 0.8rem;
+    color: #000000;
+}
+
+.product-description {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition:0.3s;
+}
+
+.product-link:hover {
+    background-color: #2980b9;
+}

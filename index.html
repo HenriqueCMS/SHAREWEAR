@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style/header_footer_assets.css">
+    <link rel="stylesheet" href="/style/styles_geral.css">
+    <link rel="stylesheet" href="/style/index_assets.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="navigation-list flex">
+                <li></a><h1 class="logo">ShareWear</h1></li>
+                <li><a href="#masculino">Masculino</a></li>
+                <li><a href="#feminino">Feminino</a></li>
+                <li><a href="#infantil">Infantil</a></li>
+                <li class="dropdown">
+                    <a href="#colecoes">Coleção</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/produtos">Casual</a></li>
+                        <li><a href="/produtos">Social</a></li>
+                        <li><a href="/produtos">Grife</a></li>
+                        <li><a href="/produtos">Inverno</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contato">Sobre nós</a></li>
+                <li><div class="anunciar"><a href="/form"><button>Anunciar</button></a></div></li>
+                <li class="search">
+                    <nav class="search-nav">
+                        <form class="search-form">
+                            <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquise um produto">
+                            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </nav>
+                </li>
+                <li class="dropdown">
+                    <button class="search-button"><i class="fas fa-user"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+
+        <div class="header-intro">
+            <div class="texto-esquerda">
+                <h2>Renove o seu estilo gastando pouco!</h2>
+                <p>
+                    Atualizar o guarda-roupa não precisa ser sinônimo de grandes despesas. Ideal para ocasiões especiais, como festas, casamentos e eventos formais, o serviço de aluguel permite que você experimente diferentes estilos e tendências sem o compromisso de uma compra definitiva.
+                </p>
+                <a href="/produtos"><button>Ver mais &#8594;</button></a>
+            </div>
+            <div class="imagem-header">
+                <img src="/img/fundo.jpg" alt="Imagem de fundo">
+            </div>
+        </div>
+
+
+        <br>
+
+        <div id="colecoes"  class="">
+            <div class="titulo-colection">
+                <h2 class="text-titulo">Coleções</h2>
+            </div>
+    
+            <section class="colection">
+    
+                <ul class="colection-list flex-row">
+    
+                    <li>
+                        <div class="colection-item">
+                            <div class="card-colection">
+                                <div class="image-colection">
+                                    <img src="/img/categorias/casual.jpg" alt="" />
+                                </div>
+                            </div>
+                            <h2>Casual</h2>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="colection-item">
+                            <div class="card-colection">
+                                <div class="image-colection">
+                                    <img src="/img/categorias/social.jpg" alt="" />
+                                </div>
+                            </div>
+                            <h2>Social</h2>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="colection-item">
+                            <div class="card-colection">
+                                <div class="image-colection">
+                                    <img src="/img/categorias/grife.jpg" alt="" />
+                                </div>
+                            </div>
+                            <h2>Grife</h2>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="colection-item">
+                            <div class="card-colection">
+                                <div class="image-colection">
+                                    <img src="/img/categorias/inverno.jpg" alt="" />
+                                </div>
+                            </div>
+                            <h2>Inverno</h2>
+                        </div>
+                    </li>
+    
+                </ul>
+    
+            </section>
+        </div>
+
+        <br>
+
+        <div id="masculino"  class="titulo-genero">
+            <h2 class="text-titulo">Masculino</h2>
+        </div>
+
+
+        <section class="carousel">
+            <button class="prev">❮</button>
+            <div class="container">
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/1.jpg" alt="" />
+                    </div>
+                    <h2>Ternos</h2>
+                    <p>Ternos completos, incluindo paletó, calça e colete, adequados para eventos formais.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/homem/2.jpg" alt="" />
+                    </div>
+                    <h2>Roupas para o frio</h2>
+                    <p>Quer ir para um viagem e não passar frio? Confira os itens disponíveis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/3.jpg" alt="" />
+                    </div>
+                    <h2>Roupas casuais</h2>
+                    <p>Roupas comuns para o dia-a-dia.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/homem/4.jpg" alt="" />
+                    </div>
+                    <h2>Camisas Sociais</h2>
+                    <p>Camisas de manga longa, em diversas cores e estilos, para eventos formais e de negócios.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/5.jpg" alt="" />
+                    </div>
+                    <h2>Acessórios de Moda</h2>
+                    <p>Abotoaduras, lenços de bolso, suspensórios, e cintos elegantes que complementam os trajes alugados.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/10.jpg" alt="" />
+                    </div>
+                    <h2>Coletes</h2>
+                    <p>Coletes para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/6.jpg" alt="" />
+                    </div>
+                    <h2>Roupas de academia</h2>
+                    <p>Roupas e acessorios para cada tipo de esporte.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/7.jpg" alt="" />
+                    </div>
+                    <h2>Calçados</h2>
+                    <p>Calçados para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/8.jpg" alt="" />
+                    </div>
+                    <h2>Jaquetas e Casacos</h2>
+                    <p>Jaquetas e Casacos para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/homem/9.jpg" alt="" />
+                    </div>
+                    <h2>Calças</h2>
+                    <p>Calças para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+            </div>
+            <button class="next">❯</button>
+        </section>
+        <br>
+        <div class="button-geral flex-row">
+            <a href="/produtos"><button>Ver mais &#8594;</button></a>
+        </div>
+        <br>
+
+        <div id="feminino"  class="titulo-genero">
+            <h2 class="text-titulo">Feminino</h2>
+        </div>
+
+
+        <section class="carousel">
+            <button class="prev">❮</button>
+            <div class="container">
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/1.jpg" alt="" />
+                    </div>
+                    <h2>Ternos</h2>
+                    <p>Ternos completos, incluindo paletó, calça e colete, adequados para eventos formais.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/mulher/2.jpg" alt="" />
+                    </div>
+                    <h2>Roupas para o frio</h2>
+                    <p>Quer ir para um viagem e não passar frio? Confira os itens disponíveis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/3.jpeg" alt="" />
+                    </div>
+                    <h2>Roupas casuais</h2>
+                    <p>Roupas comuns para o dia-a-dia.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/mulher/4.jpg" alt="" />
+                    </div>
+                    <h2>Camisas Sociais</h2>
+                    <p>Camisas de manga longa, em diversas cores e estilos, para eventos formais e de negócios.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/5.jpg" alt="" />
+                    </div>
+                    <h2>Acessórios de Moda</h2>
+                    <p>Abotoaduras, lenços de bolso, suspensórios, e cintos elegantes que complementam os trajes alugados.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/10.jpg" alt="" />
+                    </div>
+                    <h2>Coletes</h2>
+                    <p>Coletes para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/6.jpg" alt="" />
+                    </div>
+                    <h2>Roupas de academia</h2>
+                    <p>Roupas e acessorios para cada tipo de esporte.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/7.jpg" alt="" />
+                    </div>
+                    <h2>Calçados</h2>
+                    <p>Calçados para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/8.jpeg" alt="" />
+                    </div>
+                    <h2>Jaquetas e Casacos</h2>
+                    <p>Jaquetas e Casacos para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/mulher/9.jpeg" alt="" />
+                    </div>
+                    <h2>Calças</h2>
+                    <p>Calças para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+            </div>
+            <button class="next">❯</button>
+        </section>
+        <br>
+        <div class="button-geral flex-row">
+            <a href="/produtos"><button>Ver mais &#8594;</button></a>
+        </div>
+        <br>
+
+
+        <div id="infantil" class="titulo-genero">
+            <h2 class="text-titulo">Infantil</h2>
+        </div>
+
+
+        <section class="carousel">
+            <button class="prev">❮</button>
+            <div class="container">
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/1.jpg" alt="" />
+                    </div>
+                    <h2>Ternos</h2>
+                    <p>Ternos completos, incluindo paletó, calça e colete, adequados para eventos formais.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/infantil/2.jpg" alt="" />
+                    </div>
+                    <h2>Roupas para o frio</h2>
+                    <p>Quer ir para um viagem e não passar frio? Confira os itens disponíveis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/3.jpg" alt="" />
+                    </div>
+                    <h2>Roupas casuais</h2>
+                    <p>Roupas comuns para o dia-a-dia.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/produtos/infantil/4.jpg" alt="" />
+                    </div>
+                    <h2>Camisas Sociais</h2>
+                    <p>Camisas de manga longa, em diversas cores e estilos, para eventos formais e de negócios.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/5.jpg" alt="" />
+                    </div>
+                    <h2>Acessórios de Moda</h2>
+                    <p>Abotoaduras, lenços de bolso, suspensórios, e cintos elegantes que complementam os trajes alugados.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/10.jpg" alt="" />
+                    </div>
+                    <h2>Coletes</h2>
+                    <p>Coletes para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/6.jpg" alt="" />
+                    </div>
+                    <h2>Roupas de academia</h2>
+                    <p>Roupas e acessorios para cada tipo de esporte.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/7.jpg" alt="" />
+                    </div>
+                    <h2>Calçados</h2>
+                    <p>Calçados para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/8.jpg" alt="" />
+                    </div>
+                    <h2>Jaquetas e Casacos</h2>
+                    <p>Jaquetas e Casacos para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/img/produtos/infantil/9.jpg" alt="" />
+                    </div>
+                    <h2>Calças</h2>
+                    <p>Calças para todo tipo de ocasião e formalidades.</p>
+                </div>
+
+            </div>
+            <button class="next">❯</button>
+        </section>
+        <br>
+        <div class="button-geral flex-row">
+            <a href="/produtos"><button>Ver mais &#8594;</button></a>
+        </div>
+        <br>
+    </main>
+    
+    <br>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <h2>Alugue Moda</h2>
+            <p>Encontre o traje perfeito para qualquer ocasião em nosso guarda-roupa virtual.</p>
+        </div>
+        <div class="footer-info">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: contato@sharewear.com</li>
+                <li>Telefone: (00) 1234-5678</li>
+                <li>Endereço: Av. Principal, 123, Fortaleza, Brasil</li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousels = document.querySelectorAll('.carousel');
+
+            carousels.forEach(function(carousel) {
+                const container = carousel.querySelector('.container');
+                const prevBtn = carousel.querySelector('.prev');
+                const nextBtn = carousel.querySelector('.next');
+
+                // Step value for scrolling
+                const scrollStep = 300;
+
+                prevBtn.addEventListener('click', function() {
+                    container.scrollBy({
+                        left: -scrollStep,
+                        behavior: 'smooth'
+                    });
+                });
+
+                nextBtn.addEventListener('click', function() {
+                    container.scrollBy({
+                        left: scrollStep,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
